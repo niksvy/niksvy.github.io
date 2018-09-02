@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BeckAutomation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css"> 
+
+      <!-- All Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v2/smtp.js"></script>
+  <script src="tiles/js/jquery.tiles.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-inverse navbar-fixed-top">
+    <button type="button" class="navbar-toggle navbar-left" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+              <li><a href="#Home" class="glyphicon glyphicon-home"></a></li>
+              <li><a href="#Rollforming">Rollforming</a></li>
+              <li><a href="#Folding">Folding</a></li>
+              <li><a href="#TurnKey">Turn-Key</a></li>
+              <li><a href="#Networking">Networking</a></li>
+              <li><a href="#Accessories">Accessories</a></li>
+              <li><a href="#Downloads">Downloads</a></li>
+              <li><a href="#ContactUs">Contact Us</a></li>
+              <li><a href="" data-toggle="modal" data-target="#careersModal">Careers</a></li>
+          </ul>
+    </div>
+    <img src="imgs/beckLogo.png" class="beckLogo">
+</nav>
+
+<section>
+<div id="Home" class="container-fluid">
+  <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#homeCarousel" data-slide-to="1"></li>
+      <li data-target="#homeCarousel" data-slide-to="2"></li>
+      <li data-target="#homeCarousel" data-slide-to="3"></li>
+      <li data-target="#homeCarousel" data-slide-to="4"></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="img-responsive center-block" src="imgs/phoenixLogo.png" alt="Phoenix">
+      <div class="carousel-caption">
+        <h3>Phoenix Controller</h3>
+        <p>Introducing our new Phoenix Controller. Click for<a data-target="#myPages" data-slide-to="1">more</a> info.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/worldsGreatest.png" alt="Worlds Greatest">
+      <div class="carousel-caption">
+        <h3>Worlds Greatest</h3>
+        <p>Beck Automation has been featured on Worlds Greatest. Click to see video.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/metalcon.png" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/fabtech.png" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/nfba.png" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+   </div>
+
+
+    <!-- Left and right controls -->
+      <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div>
+      <div class="container">
+      <hr class="style-six"></hr>
+        <div class="container textContainerHome">
+        <h3>Beck Automation</h3>
+        <small>is a leading control system provider for the metal forming industry. Our products make production machines more efficient and profitable. We design controls and related products specifically for rollforming, cut-to-length, tube mills, portable rollformers, and folding machines. Our controls are the best in the industry. However, our greatest offering is the service and support in which we back those solutions.</small>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<section>
+<div id="Rollforming" class="container-fluid">
+<div class="container rollformingCont">
+<div id="myPages" class="carousel slide" data-interval="false" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+       <div class="page-header">
+        <h2>Rollforming</h2>
+    </div>
+    <div class="row grid-divider rollContent">
+    <div class="col-md-4 col-sm-4">
+      <div class="col-padding controllerContainer">
+        <h3>Phoenix</h3>
+        <img class="img-responsive" src="imgs/programmingScreen.png"></img>
+        <br>
+        <p>This is the newest addition to our line of rollforming controllers. The Phoenix surpasses any rollforming controller on the market today. It's massive 20.5" touch-screen display allows you to interact with all the unqiue features that come standard with the controller. Use this controller for simplistic machines or as a control solution for even the most advanced.</p>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <div class="col-padding controllerContainer">
+        <h3>Cobalt</h3>
+        <img class="img-responsive" src="imgs/cobalt.png"></img>
+        <br>
+        <p>The cost effective solution for simple shear only lines. Our Cobalt Controller comes in both panel mount and weather-resistant portable models. Its bright, sunlight readable, 6.5" color LED display makes it the perfect choice for both the plant floor and in direct sunlight in the field.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <div class="col-padding controllerContainer">
+        <h3>SII</h3>
+        <img class="img-responsive" src="imgs/sii.png"></img>
+        <br>
+        <p>Superior to any rollformer control on the market today. The SII Controller is packed with features that will handle nearly any rollforming system with ease. Its large 10.4" color touch-screen display is easy to navigate, and its many features make it easy to use. Whether your line is a simple panel line, or more complicated with dual axis, dynamic punching, gagged dies, or a combination of everything the SII Controller is your solution.
+        </p>
+      </div>
+    </div>
+    </div>
+      </div>
+
+    <div class="item"> 
+      <div class="item">
+       <div class="page-header">
+        <h3>Phoenix Controller</h3>
+    </div>
+    <div class="row grid-divider rollContent">
+    <div class="col-md-4 col-sm-4">
+      <div class="col-padding controllerContainer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima expedita incidunt rerum.</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <div class="col-padding controllerContainer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab veniam aperiam numquam cupiditate maiores repudiandae ea dicta, sunt rerum corporis. Ab veniam aperiam numquam cupiditate maiores repudiandae ea dicta, sunt rerum corporis. Ab veniam aperiam numquam cupiditate maiores repudiandae ea dicta.</p>
+      </div>
+    </div>
+    </div>
+      </div>
+    </div>
+
+    <div class="item">
+            <div class="item">
+       <div class="page-header">
+        <h3>SII Controller</h3>
+    </div>
+    <div class="row grid-divider rollContent">
+    <div class="col-md-4 col-sm-4">
+      <div class="col-padding controllerContainer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima expedita incidunt rerum.</p>
+      </div>
+    </div>
+    <div class="col-md-8 col-sm-8">
+      <div class="col-padding controllerContainer">
+        <p>Packed with features, this controller will handle nearly any rollforming press system with ease.</p>
+        <ul>
+          <li>Large Graphical color touch-screen display</li>
+          <li>+/- keys for QuickCorrect length adjustment</li>
+          <li>Compact Flash for backup and code updates</li>
+          <li>Password protected setups</li>
+          <li>Setup Wizards for easy installation and trouble-shooting</li>
+          <li>PS2 Keyboard input</li>
+          <li>Feet-Fractional, Decimal Inch, and Metric</li>
+          <li>Compact Flash for backup and code updates</li>
+          <li>Dual Axix closed loop control</li>
+          <li>Y-Axis control for presses and rollformer setup</li>
+          <li>Closed Loop and Open Loop Control</li>
+          <li>Multiple Press and Gag control</li>
+          <li>Rollfeed control</li>
+          <li>Grip Feed control</li>
+          <li>Download capable from Connex, SmartComm, and BANet</li>
+          <li>Setup wizards make installation and trouble-shooting a snap</li>
+          <li>10.4" color display with touch-screen</li>
+          <li>Multi-Axis control</li>
+          <li>Y-Axis control for press and rollformer adjustment</li>
+          <li>Thermally protected outputs</li>
+          <li>High Electrical Noise immunity</li>
+          <li>Configurable to nearly all rollforming lines, for example:</li>
+          <ol>
+            <li>stud and track</li>
+            <li>panel lines</li>
+            <li>structural products</li>
+            <li>purlin mills</li>
+            <li>tube mills</li>
+            <li>slit cut-to-length line</li>
+            <li>decking</li>
+            <li>HVAC</li>
+            <li>t-grid lines</li>
+            <li>Accessory lines</li>
+            <li>etc.</li>
+          </ol>
+          <li>Fully compatible with Our Scheduling Software to:</li>
+          <ol>
+            <li>Track down time</li>
+            <li>Track production rate</li>
+            <li>Issue new jobs to your rollformer</li>
+            <li>Backup configurations</li>
+            <li>Print reports</li>
+          </ol>
+        </ul>
+      </div>
+    </div>
+    </div>
+      </div>
+    </div>
+
+    <div class="item">
+            <div class="item">
+       <div class="page-header">
+        <h3>Cobalt Controller</h3>
+    </div>
+    <div class="row grid-divider rollContent">
+    <div class="col-md-4 col-sm-4">
+      <div class="col-padding controllerContainer">
+        <p>The cost effective solution for simple shear only lines. Our Cobalt Controller comes in both panel mount and weather-resistant portable models. Its bright, sunlight readable, 6.5" color LED display makes it the perfect choice for both the plant floor and in direct sunlight in the field.</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <div class="col-padding controllerContainer">
+        <p>Available in panel mount, or weather-tite enclosure</p>
+        <ul>
+          <li>Available in panel mount, or weather-tite enclosure</li>
+          <li>Excellent for portable machines</li>
+          <li>Super bright 6.5" color touch-screen display</li>
+          <li>Direct sunlight readable</li>
+          <li>Quick-Correct length adjustment</li>
+          <li>Feet-Fractional, Decimal Inch, and Metric</li>
+          <li>Setup Wizards for easy installation</li>
+          <li>Compact Flash for code updates</li>
+          <li>Low cost choice for many applications</li>
+          <li>Available in a weather resistant box with removable connectors for portable machines.</li>
+          <li>Also available in a convenient panel mount version for portable or factory floor machines.</li>
+          <li>Works over the entire range of 12VDC to 24VDC with no special wiring considerations.</li>
+          <li>The bright color display is sunlight readable.</li>
+          <li>Full, intelligent touchscreen interface for easy navigation and input</li>
+          <li>Setup wizards ease the setup process</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+      </div>
+    </div>
+</div>
+</div>
+<div class="container">
+    <ol class="pagination">
+      <li data-target="#myPages" data-slide-to="0"><a href="">1</a></li>
+      <li data-target="#myPages" data-slide-to="1"><a href="">2</a></li>
+      <li data-target="#myPages" data-slide-to="2"><a href="">3</a></li>
+      <li data-target="#myPages" data-slide-to="3"><a href="">4</a></li>
+   </ol>
+</div>
+</div>
+</section>
+
+<section>
+<div id="Folding" class="container-fluid">
+  <container>
+    <div class="row">
+      <div class="col-md-4 col-sm-4"><img class="intellifold shadowed" src="imgs/intellifold.png"></img>
+  </div>
+  <div class="col-md-4 col-sm-4 folderSection"><h1 class="text-center">Intellifold</h1><hr class="style-six"></hr>The Intelli-Fold Controller is the solution to your Long Folder and Electric Folder Controls Problems. It comes in pendant, freestanding, or pedestal models. We also offer standard retrofit kits and installation service for most popular brands of long hydraulic and electric folders including Jorns, Roper, RAS, Schechtl, and many more. The Intelli-Fold Controller uses solid state memory, so there are no hard-drives to fail.
+  </br>
+</br>
+  <h4>Features:</h4>
+  <ul>
+    <li>Available in a pendant or a free standing enclosure</li>
+    <li>We offer retrofit kits and installation for many popular brands of hydraulic and electric folders</li>
+    <li>Call today to request literature or for more information</li>
+    <li>PC version for remote programming</li>
+    <li>Remote Access</li>
+    <li>Solid State memory, no hard-drives or other moving parts to fail</li>
+    <li>Compact Flash for backup</li>
+    <li>Graphical programming</li>
+  </ul>
+  </div>
+  <div class="col-md-4 col-sm-4"><img class="folder shadowed" src="imgs/folder.png"></img></div>
+  </div>
+  </container>
+</div>
+</section>
+
+<section>
+<div id="TurnKey" class="container-fluid ">
+  <container>
+  <div class="row">
+    <div class="col-md-6">
+      <img class="img-responsive turnkey" src="imgs/turnkey.jpg"></img>
+    </div>
+    <div class="col-md-6">
+      <container class="center-block turnkeyText">
+      <div class="text-center"><h1>Turn-Key and Panel Assembly</h1></div>
+      <hr class="hr.style-six"></hr>
+       <div class="text-center"><h3>Looking to upgrade your controls?</h3></div>
+      </br>
+      Beck Automation provides a wide range of turn-key options for your control needs.</br>
+      No job is too big or too small. Whether the job requires only a controller and some rewiring, or it requires a new operator station and equipment cabinets. Beck Automation's engineers and technicians can offer a full service package with engineering, installation, and electrical drawings.
+      <br />
+      <a class="btn btn-primary moreInfoRight" role="button"  data-toggle="modal" data-target="#assemblyModal">More Info</a>
+      </container>
+    </div>
+  </div>
+</container>
+</div>
+</section>
+
+<section>
+<div id="Networking" class="container-fluid ">
+  <div class="container">
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail netThumb">
+      <img src="imgs/connex.png" alt="Connex">
+      <div class="caption netCaption">
+        <h3>Connex</h3>
+        <p class="netTextCont">Tired of programming jobs at the machine? Are you looking for a better way to keep track of production and coil inventory? Connex is a multi-user, Enterprise Solution to link your Office to the Plant Floor. Features include job scheduling, coil tracking, customizable reports, ability to import/export to your existing ERP software, and much more. 
+        </p>
+        <p><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#connexInfoModal">More Info</a> <a href="#" class="btn btn-default" role="button">Demo</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+      <div class="thumbnail netThumb">
+      <img src="imgs/qbelite.png" alt="QB Elite">
+      <div class="caption netCaption">
+        <h3>QB-Elite</h3>
+        <p class="netTextCont">When paired with Connex or SmartComm, QB-Elite allows users to enter sales orders that can be saved to QuickBooks and also send to controls on the plant floor without the need for double entry. This reduces both time and entry errors. 
+        </p>
+        <p><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#qbEliteInfoModal">More Info</a> <a href="#" class="btn btn-default" role="button">Demo</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+        <div class="thumbnail netThumb">
+      <img src="imgs/connex.png" alt="SmartComm">
+      <div class="caption netCaption">
+        <h3>SmartComm</h3>
+        <p class="netTextCont">When paired with Connex or SmartComm, QB-Elite allows users to enter sales orders that can be saved to QuickBooks and also send to controls on the plant floor without the need for double entry. This reduces both time and entry errors. 
+        </p>
+        <p><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#smartCommInfoModal">More Info</a> <a href="#" class="btn btn-default" role="button">Demo</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div id="Accessories" class="container-fluid ">
+  <div class="containter">
+  <div class="page-header text-center headingSpacer">
+        <h2>Accessories</h2>
+    </div>
+    <div class="container text-left accDesc">  
+      We offer a wide range of Ancillary Products. Whether you need your press valves to be more repetitive,or are needing a printer for bundle labels or part printing.
+      Beck Automation can provide the products and expertise to assist with your needs.
+    </div>
+    <div class="row grid-divider rowSpacer">
+    <div class="col-md-3 col-sm-3">
+      <div class="col-padding controllerContainer">
+        <h3 class="text-center">Valve Accelerator</h3>
+        <div class="accContainer">
+        <img class="img-responsive center-block" src="imgs/valveBoard.png"></img>
+      </div>
+        <br>
+        <p>
+        <ul>
+          <li>Your press will operate faster</li>
+          <li>Ramp coil's current up faster to open valve quicker</li>
+          <li>Optimize for your valve with adjustable output levels</li>
+          <li>Over-Current protection to protect the valves</li>
+          <li>Compact DIN rail mounted enclosure</li>
+        </ul>
+      </p>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <div class="col-padding controllerContainer">
+        <h3 class="text-center">Label Printer</h3>
+        <div class="accContainer">
+        <img class="img-responsive center-block" src="imgs/labelPrinter.png"></img>
+      </div>
+        <br>
+        <p>
+        <ul>
+          <li>Print Bundle Tags at the line</li>
+          <li>Reprint coil tags when returning to the coil to stock</li>
+          <li>Customized Label Layout</li>
+        </ul>
+      </p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <div class="col-padding controllerContainer">
+        <h3 class="text-center">Part Marking Printer</h3>
+        <div class="accContainer">
+        <img class="img-responsive center-block" src="imgs/pop.png"></img>
+      </div>
+        <br>
+        <p>
+        <ul>
+          <li>Drop on Demand models, DOD</li>
+          <li>Continuous Flow models, CIJ</li>
+          <li>Print part info directly onto material</li>
+        </ul>
+      </p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <div class="col-padding controllerContainer">
+        <h3 class="text-center">Barcode Scanner</h3>
+        <div class="accContainer">
+        <img class="img-responsive center-block" src="imgs/scanner.png"></img>
+      </div>
+        <br>
+        <p>
+        <ul>
+          <li>Corded and Cordless Models available</li>
+          <li>Scan Coil Tags to track material usage</li>
+        </ul>
+      </p>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+</section>
+
+<section>
+<div id="Downloads" class="container-fluid">
+<div class="col-md-4">Testing..</div>
+<div class="col-md-6">
+  <legend class="">Download Information</legend>
+  <div class="col-md-6">
+	<row class="form-row"><div class="form-space">First Name: <input type="text" name="FirstName" value="John"></div></row>
+	<row class="form-row"><div class="form-space">Last Name: <input type="text" name="FirstName" value="John"></div></row>
+  <row class="form-row"><div class="form-space">Email: <input type="text" name="FirstName" value="John"></div></row>
+  <row class="form-row"><div class="form-space">Title: <input type="text" name="FirstName" value="John"></div></row>
+  <row class="form-row"><div class="form-space">Company: <input type="text" name="FirstName" value="John"></div></row>
+  <row class="form-row"><div class="form-space">Phone: <input type="text" name="FirstName" value="John"></div></row>
+  </div>
+  <div class="col-md-6">
+  <row class="form-row"><div class="form-space">Address 1: <input type="text" name="FirstName" value="John"></div></row>
+  <row class="form-row"><div class="form-space">Address 2: <input type="text" name="FirstName" value="John"></div></row>
+  <row class="form-row"><div class="form-space">City: <input type="text" name="FirstName" value="John"></div></row>
+  <row class="form-row"><div class="form-space">State: <input type="text" name="FirstName" value="John"></div></row>
+  <row class="form-row"><div class="form-space">Zip: <input type="text" name="FirstName" value="John"></div></row>
+  <row class="form-row"><div class="form-space">Country: <input type="text" name="FirstName" value="John"></div></row>
+  </div>
+</div>
+</div>
+</section>
+
+
+<section>
+<div id="ContactUs" class="container-fluid ">
+  <div id="section9" class="container-fluid">
+  <div class="row">
+  <div class="col-md-8"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.5685162855298!2d-90.44293718475821!3d38.70475457960088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87df326ffe314b33%3A0x17ec27268727bc7f!2s814+Fee+Fee+Rd%2C+Maryland+Heights%2C+MO+63043!5e0!3m2!1sen!2sus!4v1535905475387" width="950" height="550" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+  <div class="col-md-4"><div class="panel panel-default panel-inverse">
+      <div class="panel-heading">Contact Us</div>
+      <div class="panel-body">
+      <container>
+      <h5>Beck Automation, LLC</h5>
+      814 Fee Fee Rd</br>
+      St. Louis, MO 63043</br>
+      P: (314) 576-9736</br>
+      Fax: (314) 227-2104 </br>
+      </br>
+      Sales:   <a href="mailto:sales@beckautomation.com">Shawn Huffman</a> Extension: 105 </br>
+      Support: <a href="mailto:bromie@beckautomation.com"> Brock Miesner</a> Extension: 109 </br>
+      Support: <a href="mailto:korsmi@beckautomation.com">Korey Smith</a> Extension: 112 </br>
+      Support: <a href="mailto:zacbec@beckautomation.com">Zac Beckmann</a> Extension: 118 </br>
+      Support: <a href="mailto:kendeg@beckautomation.com">Ken Degner</a> Extension: 119 </br>
+      Support: <a href="mailto:jacgro@beckautomation.com">Jacob Groff</a> Extension: 117 </br>
+      </container>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+      <footer class="page-footer font-small mdb-color pt-4 mt-4">
+        <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left mt-3 pb-3">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Newsletter</h6>
+              <p>Sign up for our newsletter today!</p>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@email.com">
+                </div>
+              <div class="btn btn-primary" data-toggle="modal" data-target="#newsModal">Submit</div>
+            </div>
+            <hr class="w-100 clearfix d-md-none">
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Useful Links</h6>
+              <p><a href="#services">Rollforming</a></p>
+              <p><a href="#portfolio">Folding</a></p>
+              <p><a href="#aboutus">Turn-Key</a></p>
+              <p><a href="#contactus">Networking</a></p>
+            </div>
+            <hr class="w-100 clearfix d-md-none">
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold"><br></h6>
+              <p><a href="" data-toggle="modal" data-target="#affiliatesModal">Accessories</a></p>
+              <p><a href="" data-toggle="modal" data-target="#jobsModal">Downloads</a></p>
+              <p><a href="" data-toggle="modal" data-target="#helpModal">Contact Us</a></p>
+              <p><a href="#faqs">Careers</a></p>
+            </div>
+            <hr class="w-100 clearfix d-md-none">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><i class="fa fa-home mr-3"></i>814 Fee Fee Rd, St. Louis, MO 63043</p>
+              <p><i class="fa fa-envelope mr-3"></i> sales@beckautomation.com</p>
+              <p><i class="fa fa-phone mr-3"></i><a href="">(314) 576-9736</a></p>
+              <p><i class="fa fa-comment mr-3"></i><a href="">(314) 576-9736</a></p>
+            </div>
+          </div>
+          <hr class="hr-color">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-8 col-lg-8">
+              <p class="text-center text-md-left">© 2018 Copyright: <a href=""><strong> BeckAutomation.com</strong></a></p>
+
+            </div>
+            <div class="col-md-4 col-lg-4 ml-lg-0">
+              <div class="text-center text-md-right">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fab fa-twitter"></i></a></li>
+                  <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fab fa-google-plus"></i></a></li>
+                  <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer End -->
+
+<!-- Modal -->
+<div id="careersModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Careers</h4>
+      </div>
+      <div class="modal-body">
+        <p>We are currently not looking for anyone.</p>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div id="connexInfoModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Connex Features</h4>
+      </div>
+      <div class="modal-body">
+         <ul>
+        <li>Web-based multi-user access
+            <li>Job Scheduling</li>
+            <li>Coil Tracking and Forcasting</li>
+            <li>Multi-Plant capability</li>
+            <li>Bundle Tag and Coil Tag printing</li>
+            <li>Nightly Backups</li>
+            <li>Import and Export Cabability</li>
+            <li>Multi-Plant Capability</li>
+            <li>Download to Beck Rollform and Folder Controls</li>
+            <li>Download to some 3rd Party Controls</li>
+            <li>Optional Sales Order Entry System</li>
+            <li>Optional Invoicing Module for Quickbooks Integration</li>
+        <ul>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="qbEliteInfoModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">QB-Elite Features</h4>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Mimicks the Quickbooks Sales Order Screen</li>
+          <li>Adds ability to specify a Quantity and Length to calculate a Total</li>
+          <li>Uses calculated total and rate to determine price</li>
+          <li>Custom pricing capabilities</li>
+          <li>Sales order saved right in your Quickbooks</li>
+          <li>Allows exporting of sales orders to Smartcomm</li>
+          <li>Multiple users can enter sales orders without QuickBooks on their Computer</li>
+        <ul>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="smartCommInfoModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">SmartComm Features</h4>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Web-based multi-user access</li>
+          <li>Job Scheduling</li>
+          <li>Coil Tracking and Forcasting</li>
+          <li>Multi-Plant capability</li>
+          <li>Bundle Tag and Coil Tag printing</li>
+          <li>Nightly Backups</li>
+          <li>Import and Export Cabability</li>
+          <li>Multi-Plant Capability</li>
+          <li>Download to Beck Rollform and Folder Controls</li>
+          <li>Download to some 3rd Party Controls</li>
+          <li>Optional Sales Order Entry System</li>
+          <li>Optional Invoicing Module for Quickbooks Integration</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div id="assemblyModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Retrofitted Lines and Assemblies</h4>
+      </div>
+      <div class="modal-body">
+        <container><div id="assemblyPics" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#assemblyPics" data-slide-to="0" class="active"></li>
+      <li data-target="#assemblyPics" data-slide-to="1"></li>
+      <li data-target="#assemblyPics" data-slide-to="2"></li>
+      <li data-target="#assemblyPics" data-slide-to="3"></li>
+      <li data-target="#assemblyPics" data-slide-to="4"></li>
+      <li data-target="#assemblyPics" data-slide-to="5"></li>
+      <li data-target="#assemblyPics" data-slide-to="6"></li>
+      <li data-target="#assemblyPics" data-slide-to="7"></li>
+      <li data-target="#assemblyPics" data-slide-to="8"></li>
+      <li data-target="#assemblyPics" data-slide-to="9"></li>
+      <li data-target="#assemblyPics" data-slide-to="10"></li>
+      <li data-target="#assemblyPics" data-slide-to="11"></li>
+      <li data-target="#assemblyPics" data-slide-to="12"></li>
+      <li data-target="#assemblyPics" data-slide-to="13"></li>
+      <li data-target="#assemblyPics" data-slide-to="14"></li>
+      <li data-target="#assemblyPics" data-slide-to="15"></li>
+      <li data-target="#assemblyPics" data-slide-to="16"></li>
+      <li data-target="#assemblyPics" data-slide-to="17"></li>
+      <li data-target="#assemblyPics" data-slide-to="18"></li>
+      <li data-target="#assemblyPics" data-slide-to="19"></li>
+      <li data-target="#assemblyPics" data-slide-to="20"></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="img-responsive center-block" src="imgs/gallery/asc.JPG" alt="Phoenix">
+      <div class="carousel-caption">
+        <h3>Phoenix Controller</h3>
+        <p>Introducing our new Phoenix Controller. Click for<a data-target="#myPages" data-slide-to="1">more</a> info.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/ascgarage.JPG" alt="Worlds Greatest">
+      <div class="carousel-caption">
+        <h3>Worlds Greatest</h3>
+        <p>Beck Automation has been featured on Worlds Greatest. Click to see video.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/bkrotary.JPG" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/cgdl.JPG" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/chinesewallframe.JPG" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+        <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/cobaltske.jpg" alt="Phoenix">
+      <div class="carousel-caption">
+        <h3>Phoenix Controller</h3>
+        <p>Introducing our new Phoenix Controller. Click for<a data-target="#myPages" data-slide-to="1">more</a> info.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/corlepurlin.JPG" alt="Worlds Greatest">
+      <div class="carousel-caption">
+        <h3>Worlds Greatest</h3>
+        <p>Beck Automation has been featured on Worlds Greatest. Click to see video.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/dwnspout.jpg" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/gdsw.JPG" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/hayesfolder.JPG" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+        <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/jornsfl.png" alt="Phoenix">
+      <div class="carousel-caption">
+        <h3>Phoenix Controller</h3>
+        <p>Introducing our new Phoenix Controller. Click for<a data-target="#myPages" data-slide-to="1">more</a> info.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/jornsover.JPG" alt="Worlds Greatest">
+      <div class="carousel-caption">
+        <h3>Worlds Greatest</h3>
+        <p>Beck Automation has been featured on Worlds Greatest. Click to see video.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/lidbacklayout.JPG" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/lockseam.jpg" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/mrspl.JPG" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+        <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/ntstud.jpg" alt="Phoenix">
+      <div class="carousel-caption">
+        <h3>Phoenix Controller</h3>
+        <p>Introducing our new Phoenix Controller. Click for info.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/panellay.JPG" alt="Worlds Greatest">
+      <div class="carousel-caption">
+        <h3>Worlds Greatest</h3>
+        <p>Beck Automation has been featured on Worlds Greatest. Click to see video.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/purlineline.JPG" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/rfdline.jpg" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/schefold.JPG" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/tgrid.jpg" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/tubemill.jpg" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/tupe.JPG" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/zimmerman.JPG" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="imgs/gallery/zimmermansii.JPG" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+   </div>
+
+
+    <!-- Left and right controls -->
+      <a class="left carousel-control" href="#assemblyPics" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#assemblyPics" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div></container>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+
+    var getCopyRightYear = new Date();
+    var copyRightYear = getCopyRightYear.getFullYear();
+
+    var el = document.getElementById('footerCopyRight');
+    el.innerHTML = '<p>&copy; Beck Automation' + copyRightYear + '</p>';
+
+});
+</script>
+
+</body>
+</html>
+
