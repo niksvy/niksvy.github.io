@@ -2,6 +2,16 @@
   height: 45px;
 }
 
+.netCards {
+  padding-top: 20px;
+  width: 70%;
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
 .header {
   width: 100%;
   box-shadow: 4px 4px 20px #aaa;
@@ -76,6 +86,7 @@
   height: 400px; 
 }
 
+
 hr.style-six {
     border: 0;
     height: 0;
@@ -142,15 +153,21 @@ hr.style-six {
   height: 490px;
 }
 
+.folderSection {
+  padding-bottom: 100px;
+}
+
 .folder {
-  padding: 300px 0px 0px 0px;
-  height: 100%;
+  position: absolute;
+  bottom: 0px;
   width: 100%;
   opacity: .75;
 }
 
-.folderSection {
-  padding: 50px 0px 0px 0px;
+@media ( max-width: 768px ) {
+    .folder {
+      position: relative;
+    }
 }
 
 .intellifold {
@@ -161,9 +178,6 @@ hr.style-six {
 
 .shadowed {
     -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
-    filter: url(#drop-shadow);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
 
 .over img {
@@ -173,9 +187,9 @@ hr.style-six {
 }
 
 .turnkey {
-  margin: 0px 0px 0px 50px;
-  width: 50%;
-  box-shadow: 8px 8px 10px #aaa;
+  margin: 0px 0px 0px 0px;
+  width: 75%;
+  box-shadow: 8px 8px 10px #a9a9a9;
   opacity: .95;
 }
 
@@ -226,44 +240,46 @@ height: 620px;
 }
 
 #Rollforming {
-  padding: 50px 0px 0px 0px;
+  padding: 50px 0px 50px 0px;
   background-color: #ffffff;
 }
 
 #Folding {
-  padding: 75px 0px 0px 0px;
-  height: calc(100vh + 100px);
-  background-color: #eee;
+  padding: 20px 0px 0px 0px;
+  background-color: #e9ecef;
+  box-shadow: 4px 4px 20px #aaa;
 }
 
 #TurnKey {
-  padding: 100px 0px 0px 0px;
-  height: calc(100vh + 100px);
-  background-color: #eaeaea;
+  padding: 100px 50px 100px 50px;
+  background-color: #fff;
+  box-shadow: 4px 4px 20px #aaa;
 }
 
 #Networking {
-  padding: 75px 0px 0px 0px;
-  height: calc(100vh + 50px);
-  background-color: #fff;
+  padding: 75px 50px 75px 50px;
+  background-color: #e9ecef;
+    box-shadow: 4px 4px 20px #aaa;
 }
 
 #Accessories {
-  padding: 50px 0px 0px 0px;
-  height: calc(100vh + 25px);
+  padding: 50px 0px 100px 0px;
   background-color: #ffffff;
+    box-shadow: 4px 4px 20px #aaa;
 }
 
 #ContactUs {
   padding:75px 0px 0px 0px;
   height: 650px;
-  background-color: #eaeaea;
+  background-color: #e9ecef;
+    box-shadow: 4px 4px 20px #aaa;
 }
 
 #Footer {
   padding: 0px 0px 0px 0px;
   height: 200px;
   background-color: #222222;
+    box-shadow: 4px 4px 20px #aaa;
 }
 
 #FooterColumns {
