@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main2.css"> 
+
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
       <!-- Navigation Bar -->
+      <div id="Main"></div>
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive">
            <span class="navbar-toggler-icon small"></span>
@@ -23,7 +23,7 @@
          <div class="collapse navbar-collapse navbar-right" id="navbarResponsive">
             <ul class="navbar-nav">
               <li class="nav-item ">
-                <a class="nav-link" href="#Home">Home</a>
+                <a class="nav-link" href="#Main">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Rollforming">Rollforming</a>
@@ -41,7 +41,7 @@
                 <a class="nav-link" href="#Accessories">Accessories</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contactus">Contact Us</a>
+                <a class="nav-link" href="#ContactUs">Contact Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#downloads">Downloads</a>
@@ -74,25 +74,40 @@
           <div class="card-img-overlay cardImgOverlayTile">
           </div>
         </div>
-        <div class="card cardTile tileButton">
+        <div class="card cardTile tileButton" data-toggle="modal" data-target="#worlds-modal">
           <img class="card-img-top" src="imgs/worldsGreatest.png" alt="Card image">
           <div class="card-img-overlay cardImgOverlayTile">
           </div>
         </div>
-        <div class="card cardTile tileButton">
+        <div class="card cardTile tileButton" onclick="window.open('http://www.metalcon.com/metalcon18/public/enter.aspx', '_blank');"">
           <img class="card-img-top" src="imgs/metalcon.png" alt="Card image">
           <div class="card-img-overlay cardImgOverlayTile">
           </div>
+          <p>
+          October 10-12, 2018<br> 
+          Charlotte, NC<br> 
+          Booth 1831
+          </p>
         </div>
-        <div class="card cardTile tileButton">
+        <div class="card cardTile tileButton" onclick="window.open('https://www.euroblech.com/2018/english/', '_blank');">
+          <img class="card-img-top tileEuroBlech" src="imgs/euroblech.jpg" alt="Card image">
+          <div class="card-img-overlay cardImgOverlayTile">
+          </div>
+          <p>
+          October 23-26, 2018<br>
+          Hanover, Germany<br>
+          Stand 348
+          </p>
+        </div>
+        <div class="card cardTile tileButton" onclick="window.open('https://www.fabtechexpo.com/', '_blank');">
           <img class="card-img-top" src="imgs/fabtech.png" alt="Card image">
           <div class="card-img-overlay cardImgOverlayTile">
           </div>
-        </div>
-        <div class="card cardTile tileButton">
-          <img class="card-img-top" src="imgs/nfba.png" alt="Card image">
-          <div class="card-img-overlay cardImgOverlayTile">
-          </div>
+          <p>
+          November 6-8, 2018<br>
+          Atlanta, GA<br>
+          Booth #B7829
+          </p>
         </div>
         </div>
       </div>
@@ -104,26 +119,20 @@
     <section>
       <div id="Rollforming" class="container-fluid">
       <div class="container">
-      <div id="myPages" class="carousel slide" data-interval="false" data-ride="carousel">
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-             <div class="page-header">
+        <div class="page-header">
           <h2>Rollforming</h2>
           <hr>
           </div>
           <div class="row grid-divider">
-          <div class="col-md-4 col-sm-4">
-            <div class="col-padding controllerContainer">
+          <div class="col-md-4 col-sm-4 rollformingButton">
+            <div class="col-padding">
               <h3>Phoenix</h3>
               <img class="img-responsive" src="imgs/programmingScreen.png">
-             
               <p>This is the newest addition to our line of rollforming controllers. The Phoenix surpasses any rollforming controller on the market today. It's massive 20.5" touch-screen display allows you to interact with all the unqiue features that come standard with the controller. Use this controller for simplistic machines or as a control solution for even the most advanced.</p>
               </div>
           </div>
-          <div class="col-md-4 col-sm-4">
-            <div class="col-padding controllerContainer">
+          <div class="col-md-4 col-sm-4 rollformingButton">
+            <div class="col-padding">
               <h3>Cobalt</h3>
               <img class="img-responsive" src="imgs/cobalt.png">
              
@@ -131,8 +140,8 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-4">
-            <div class="col-padding controllerContainer">
+          <div class="col-md-4 col-sm-4 rollformingButton">
+            <div class="col-padding">
               <h3>SII</h3>
               <img class="img-responsive" src="imgs/sii.png">
           
@@ -142,8 +151,6 @@
           </div>
           </div>
             </div>
-      </div>
-      </div>
       </div>
       </div>
     </section>
@@ -255,15 +262,15 @@
       We offer a wide range of Ancillary Products. Whether you need your press valves to be more repetitive,or are needing a printer for bundle labels or part printing.
       Beck Automation can provide the products and expertise to assist with your needs.
     </div>
-    <div class="row grid-divider rowSpacer">
-    <div class="col-md-3 col-sm-3">
-      <div class="col-padding controllerContainer">
+    <div class="row grid-divider">
+    <div class="col-sm-12 col-md-6 col-lg-3 rollformingButton">
+      <div class="col-padding">
         <h3 class="text-center">Valve Accelerator</h3>
         <div class="accContainer">
         <center><img class="center-block" src="imgs/valveBoard.png"></img></center>
       </div>
         <br>
-        <p>
+        <p class="text-center">
         <ul>
           <li>Your press will operate faster</li>
           <li>Ramp coil's current up faster to open valve quicker</li>
@@ -274,14 +281,14 @@
       </p>
         </div>
     </div>
-    <div class="col-md-3 col-sm-3">
-      <div class="col-padding controllerContainer">
+    <div class="col-sm-12 col-md-6 col-lg-3 rollformingButton">
+      <div class="col-padding">
         <h3 class="text-center">Label Printer</h3>
         <div class="accContainer">
         <center><img class="center-block" src="imgs/labelPrinter.png"></img></center>
       </div>
         <br>
-        <p>
+        <p class="text-center">
         <ul>
           <li>Print Bundle Tags at the line</li>
           <li>Reprint coil tags when returning to the coil to stock</li>
@@ -290,14 +297,14 @@
       </p>
       </div>
     </div>
-    <div class="col-md-3 col-sm-3">
-      <div class="col-padding controllerContainer">
+    <div class="col-sm-12 col-md-6 col-lg-3 rollformingButton">
+      <div class="col-padding">
         <h3 class="text-center">Part Marking Printer</h3>
         <div class="accContainer">
         <center><img class="center-block" src="imgs/pop.png"></img></center>
       </div>
         <br>
-        <p>
+        <p class="text-center">
         <ul>
           <li>Drop on Demand models, DOD</li>
           <li>Continuous Flow models, CIJ</li>
@@ -306,14 +313,14 @@
       </p>
       </div>
     </div>
-    <div class="col-md-3 col-sm-3">
-      <div class="col-padding controllerContainer">
+    <div class="col-sm-12 col-md-6 col-lg-3 rollformingButton">
+      <div class="col-padding">
         <h3 class="text-center">Barcode Scanner</h3>
         <div class="accContainer">
         <center><img class="center-block" src="imgs/scanner.png"></img></center>
       </div>
         <br>
-        <p>
+        <p class="text-center">
         <ul>
           <li>Corded and Cordless Models available</li>
           <li>Scan Coil Tags to track material usage</li>
@@ -329,28 +336,29 @@
 
 <section>
 <div id="ContactUs" class="container-fluid ">
-  <div id="section9" class="container-fluid">
-  <div class="row">
-  <div class="col-md-8"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.5685162855298!2d-90.44293718475821!3d38.70475457960088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87df326ffe314b33%3A0x17ec27268727bc7f!2s814+Fee+Fee+Rd%2C+Maryland+Heights%2C+MO+63043!5e0!3m2!1sen!2sus!4v1535905475387" width="950" height="550" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-  <div class="col-md-4"><div class="panel panel-default panel-inverse">
-      <div class="card-header">Contact Us</div>
-      <container>
-      <h5>Beck Automation, LLC</h5>
-      814 Fee Fee Rd</br>
-      St. Louis, MO 63043</br>
-      P: (314) 576-9736</br>
-      Fax: (314) 227-2104 </br>
-      </br>
-      Sales:   <a href="mailto:sales@beckautomation.com">Shawn Huffman</a> Extension: 105 </br>
-      Support: <a href="mailto:bromie@beckautomation.com"> Brock Miesner</a> Extension: 109 </br>
-      Support: <a href="mailto:korsmi@beckautomation.com">Korey Smith</a> Extension: 112 </br>
-      Support: <a href="mailto:zacbec@beckautomation.com">Zac Beckmann</a> Extension: 118 </br>
-      Support: <a href="mailto:kendeg@beckautomation.com">Ken Degner</a> Extension: 119 </br>
-      Support: <a href="mailto:jacgro@beckautomation.com">Jacob Groff</a> Extension: 117 </br>
-      </container>
-      </div>
+  <div class="row netThumb">
+  <div class="col-md-8"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.5685162855298!2d-90.44293718475821!3d38.70475457960088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87df326ffe314b33%3A0x17ec27268727bc7f!2s814+Fee+Fee+Rd%2C+Maryland+Heights%2C+MO+63043!5e0!3m2!1sen!2sus!4v1535905475387" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+  <div class="col-md-4">
+  <div class="card">
+    <div class="card-header">Contact Us</div>
+      <div class="card-body">
+        <container>
+        <h5>Beck Automation, LLC</h5>
+        814 Fee Fee Rd</br>
+        St. Louis, MO 63043</br>
+        P: (314) 576-9736</br>
+        Fax: (314) 227-2104 </br>
+        </br>
+        Sales:   <a href="mailto:sales@beckautomation.com">Shawn Huffman</a> Extension: 105 </br>
+        Support: <a href="mailto:bromie@beckautomation.com"> Brock Miesner</a> Extension: 109 </br>
+        Support: <a href="mailto:korsmi@beckautomation.com">Korey Smith</a> Extension: 112 </br>
+        Support: <a href="mailto:zacbec@beckautomation.com">Zac Beckmann</a> Extension: 118 </br>
+        Support: <a href="mailto:kendeg@beckautomation.com">Ken Degner</a> Extension: 119 </br>
+        Support: <a href="mailto:jacgro@beckautomation.com">Jacob Groff</a> Extension: 117 </br>
+        </container>
+      </div> 
+    </div>
   </div>
-</div>
 </div>
 </section>
 
@@ -367,7 +375,7 @@
                 </div>
               <div class="btn btn-primary" data-toggle="modal" data-target="#newsModal">Submit</div>
             </div>
-            <hr class="w-100 clearfix d-md-none">
+            <hr class="w-100 clearfix d-none d-sm-none d-md-none">
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
               <h6 class="text-uppercase mb-4 font-weight-bold">Useful Links</h6>
               <p><a href="#services">Rollforming</a></p>
@@ -375,15 +383,15 @@
               <p><a href="#aboutus">Turn-Key</a></p>
               <p><a href="#contactus">Networking</a></p>
             </div>
-            <hr class="w-100 clearfix d-md-none">
+            <hr class="w-100 clearfix d-none d-sm-none d-md-none">
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold"><br></h6>
+              <h6 class="text-uppercase mb-4 font-weight-bold d-none d-sm-inline"><br></h6>
               <p><a href="" data-toggle="modal" data-target="#affiliatesModal">Accessories</a></p>
               <p><a href="" data-toggle="modal" data-target="#jobsModal">Downloads</a></p>
               <p><a href="" data-toggle="modal" data-target="#helpModal">Contact Us</a></p>
               <p><a href="#faqs">Careers</a></p>
             </div>
-            <hr class="w-100 clearfix d-md-none">
+            <hr class="w-100 clearfix d-none d-sm-none d-md-none">
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
               <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
               <p><i class="fa fa-home mr-3"></i>814 Fee Fee Rd, St. Louis, MO 63043</p>
@@ -413,42 +421,45 @@
       <!-- Footer End -->
 
 
+<div class="modal fade" id="worlds-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Beck Automation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+              <iframe width="100%" height="500px" src="https://www.youtube.com/embed/ZZilpAY14WY" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<script>
-$(document).ready(function(){
-  // Add scrollspy to <body>
-  $('body').scrollspy({target: ".navbar", offset: 50});
+    <script>
+    $(document).ready(function(){
+      $('body').scrollspy({target: ".navbar", offset: 50});
 
-  // Add smooth scrolling on all links inside the navbar
-  $("#myNavbar a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+      $("#navbarResponsive a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+          var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            window.location.hash = hash;
+          });
+        }  
       });
-    }  // End if
-  });
-
-    var getCopyRightYear = new Date();
-    var copyRightYear = getCopyRightYear.getFullYear();
-
-    var el = document.getElementById('footerCopyRight');
-    el.innerHTML = '<p>&copy; Beck Automation' + copyRightYear + '</p>';
-
-});
-</script>
+    });
+    </script>
 
 </body>
 </html>
