@@ -1,3 +1,10 @@
+:target {
+  display: block;
+  position: relative;
+  top: -71px; 
+  visibility: hidden;
+}
+
 .beckLogo {
   height: 45px;
 }
@@ -348,7 +355,7 @@ height: 600px;
 }
 
 #Controllers {
-  padding: 100px 20px 50px 20px;
+  padding: 50px 20px 50px 20px;
   box-shadow: 4px 4px 20px #aaa;
 }
 
