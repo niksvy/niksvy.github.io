@@ -7,6 +7,14 @@
   padding: 50px 0px 50px 0px;
 }
 
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
 a {
     color: #9d9d9d;
     text-decoration: none;
@@ -91,6 +99,21 @@ a {
     box-shadow: 8px 8px 10px #aaa;
 }
 
+.netcardTile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: .5rem;
+    box-shadow: 8px 8px 10px #aaa;
+}
+
+.netrowTiles {
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
 .cardImgOverlayTile {
     position: absolute;
     top: 0;
@@ -111,8 +134,9 @@ a {
 }
 
 .page-footer{
-  background-color: #222;
+  background-color: #343a40;
   color: #9d9d9d;
+  box-shadow: 8px 8px 10px #aaa;
 }
 
 .hr-color{
@@ -327,12 +351,21 @@ height: 600px;
   padding: 50px 20px 50px 20px;
 }
 
+#turnkeySec {
+  padding: 50px 50px 0px 50px;
+  box-shadow: 4px 4px 20px #aaa;
+}
+
+#Networking {
+  padding: 50px 50px 0px 50px;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 20px #aaa;
+}
+
 body {
     position: relative;
     overflow-x:hidden;
 }
-
-
 
 input, textarea { 
     padding: 9px; 
