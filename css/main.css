@@ -121,6 +121,13 @@ a {
   margin-left: 150px;
 }
 
+@media ( max-width: 1175px ) {
+    .netrowTiles {
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+}
+
 .cardImgOverlayTile {
     position: absolute;
     top: 0;
@@ -365,7 +372,7 @@ height: 600px;
 }
 
 #NetworkingPage {
-  padding: 50px 50px 0px 50px;
+  padding: 50px 50px 50px 50px;
   background-color: #ffffff;
   box-shadow: 4px 4px 20px #aaa;
 }
