@@ -372,7 +372,7 @@
 
 
 <!-- Footer -->
-      <footer class="page-footer font-small mdb-color pt-4">
+      <footer id="footer" class="page-footer font-small mdb-color pt-4">
         <div class="container text-center text-md-left">
           <div class="row text-center text-md-left mt-3 pb-3">
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -674,7 +674,7 @@
 
     <script>
     $(document).ready(function(){
-      $('body').scrollspy({target: ".navbar", offset: 50});
+      $('body').scrollspy({target: ".navbar", offset: 100});
 
       $("#navbarResponsive a").on('click', function(event) {
         if (this.hash !== "") {
@@ -683,10 +683,23 @@
           var hash = this.hash;
 
           $('html, body').animate({
-            scrollTop: $(hash).offset().top
+            scrollTop: $(hash).offset().top - 50
           }, 800, function(){
        
-            window.location.hash = hash;
+          });
+        }  
+      });
+
+      $("#footer a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top - 50
+          }, 800, function(){
+       
           });
         }  
       });
