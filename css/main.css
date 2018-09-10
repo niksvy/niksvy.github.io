@@ -29,6 +29,14 @@ a {
     -webkit-text-decoration-skip: objects;
 }
 
+a:hover {
+    color: #fff;
+}
+
+a:active {
+  color: #fff;
+}
+
 .list-group-item.active {
     z-index: 2;
     color: #fff;
@@ -385,7 +393,7 @@ body {
 .form-horizontal{
   padding: 0px 100px 0px 100px;
 }
-   
+
 input:hover, textarea:hover, 
 input:focus, textarea:focus { 
     border-color: #C9C9C9; 
