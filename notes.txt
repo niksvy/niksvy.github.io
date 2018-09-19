@@ -1,0 +1,55 @@
+x1) Add to the header
+
+Beck Automation is a leading control system provider for the metal forming industry. Our products make production machines more efficient and profitable. We design controls and related products specifically for rollforming, cut-to-length, tube mills, portable rollformers, and folding machines. Our controls are the best in the industry. However, our greatest offering is the service and support in which we back those solutions.
+
+x2) Move the logo to the left hand side of the screen & we'll change color on Beck to lighter blue
+
+x3) More info button added to all sections instead of being able to press in
+
+x4) Add padding on roll forming section so the text shows up lower
+
+x5) Make tiles smaller on the main page so they can see the roll forming section
+
+x6) Intellifold needs Folder section written like the rest of the section heading
+
+x7) Intellifold section bold out different folders we support horns, roper, ras, schecthtl
+
+x8) Remove PS2 Keyboard input
+
+9) Remove SmartComm put translators in place
+
+10) Work on logo for translators
+
+x11) Machine Maintaince for modules fix the image under the Machine Maintaince Header 
+
+x12) Custom excel Reports -> Custom API Reports
+
+13) Create drop down on Optional Modules and move translators to the Optional Modules section. Create new logo where smartcomm is on the main page w/ pics of all options.
+
+14) Add description to the TurnKey gallery images (white text)
+
+15) Not live (add in general docs for the controllers below the images in controllers)
+
+16) Phoenix logo remove.  
+
+17) Add bezel to phoenix on the controller portion of the roll forming section
+
+18) Take out features of the intellifold
+
+19) Make less
+  intellifold less drastic
+
+20) hover over contacts needs to be a different color
+
+21) make map smaller
+
+22) make text smaller on contact us
+
+23) Repairs Taylor Robinson add extension and update the names
+
+24) Subdivide the sections for Contact US
+
+25) Tech/Eng Careers
+
+
+ 

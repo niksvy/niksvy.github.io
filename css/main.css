@@ -89,6 +89,7 @@ a:active {
   transform: translateY(4px);
 }
 
+
 .rollformingButton {
   padding: 15px 25px;
   cursor: pointer;
@@ -108,8 +109,8 @@ a:active {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: .5rem;
     box-shadow: 8px 8px 10px #aaa;
 }
@@ -153,6 +154,20 @@ a:active {
 .rowTiles {
   margin-right: 25px;
   margin-left: 25px;
+}
+
+@media ( max-width: 1175px ) {
+    .rowTiles {
+      margin-right: 200px;
+      margin-left: 200px;
+    }
+}
+
+@media ( max-width: 825px ) {
+    .rowTiles {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
 }
 
 .page-footer{
@@ -318,6 +333,10 @@ height: 600px;
   float: right;
 }
 
+.rollformerParaPadding {
+  padding-top: 10px;
+}
+
 #Home {
   padding: 0px 0px 50px 0px;
   background-color: #e9ecef;
@@ -329,7 +348,7 @@ height: 600px;
 }
 
 #Folding {
-  padding: 50px 0px 50px 0px;
+  padding: 50px 100px 50px 100px;
   background-color: #e9ecef;
   box-shadow: 4px 4px 20px #aaa;
 }
