@@ -16,7 +16,7 @@ x7) Intellifold section bold out different folders we support horns, roper, ras,
 
 x8) Remove PS2 Keyboard input
 
-9) Remove SmartComm put translators in place
+x9) Remove SmartComm put translators in place
 
 10) Work on logo for translators
 
@@ -24,30 +24,31 @@ x11) Machine Maintaince for modules fix the image under the Machine Maintaince H
 
 x12) Custom excel Reports -> Custom API Reports
 
-13) Create drop down on Optional Modules and move translators to the Optional Modules section. Create new logo where smartcomm is on the main page w/ pics of all options.
+13) Create drop down on Optional Modules and move translators to the Optional Modules section. 
+
+x13a) Create new logo where smartcomm is on the main page w/ pics of all options.
 
 14) Add description to the TurnKey gallery images (white text)
 
-15) Not live (add in general docs for the controllers below the images in controllers)
+y15) Not live (add in general docs for the controllers below the images in controllers)
 
-16) Phoenix logo remove.  
+x16) Phoenix logo remove.  
 
 17) Add bezel to phoenix on the controller portion of the roll forming section
 
-18) Take out features of the intellifold
+x18) Take out features of the intellifold
 
-19) Make less
-  intellifold less drastic
+x19) Make less intellifold less drastic
 
-20) hover over contacts needs to be a different color
+x20) hover over contacts needs to be a different color
 
-21) make map smaller
+x21) make map smaller
 
-22) make text smaller on contact us
+x22) make text smaller on contact us
 
-23) Repairs Taylor Robinson add extension and update the names
+x23) Repairs Taylor Robinson add extension and update the names
 
-24) Subdivide the sections for Contact US
+x24) Subdivide the sections for Contact US
 
 25) Tech/Eng Careers
 

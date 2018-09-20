@@ -30,11 +30,13 @@ a {
 }
 
 a:hover {
-    color: #fff;
+    color: #000;
+     text-decoration: none;
 }
 
 a:active {
-  color: #fff;
+  color: #000;
+   text-decoration: none;
 }
 
 .list-group-item.active {
@@ -343,12 +345,12 @@ height: 600px;
 }
 
 #Rollforming {
-  padding: 50px 0px 50px 0px;
+  padding: 50px 50px 50px 50px;
   background-color: #ffffff;
 }
 
 #Folding {
-  padding: 50px 100px 50px 100px;
+  padding: 50px 50px 50px 50px;
   background-color: #e9ecef;
   box-shadow: 4px 4px 20px #aaa;
 }
@@ -372,7 +374,7 @@ height: 600px;
 }
 
 #ContactUs {
-  padding:75px 0px 75px 0px;
+  padding:75px 50px 75px 50px;
   background-color: #e9ecef;
   box-shadow: 4px 4px 20px #aaa;
 }
