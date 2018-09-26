@@ -12,13 +12,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-
-
     <link rel="stylesheet" href="css/main.css">
     <meta name="description" content="Industrial control systems for the rollforming industry. Rollforming, Folders, and Networking solutions.">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/312283.js"></script>
+    <!-- End of HubSpot Embed Code -->
       <!-- Navigation Bar -->
       <div id="Main"></div>
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
@@ -72,6 +72,7 @@
       </div>
     </div>
     <!-- Jumbotron End-->
+
 
     <!-- Tiles -->
     <section>
@@ -372,7 +373,6 @@
 </div>
 </section>
 
-
 <!-- Footer -->
       <footer id="footer" class="page-footer font-small mdb-color pt-4">
         <div class="container text-center text-md-left">
@@ -380,9 +380,16 @@
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
               <h6 class="text-uppercase mb-4 font-weight-bold">Newsletter</h6>
               <p>Sign up for our newsletter today!</p>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@email.com">
-                </div>
+              <!--[if lte IE 8]>
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+              <![endif]-->
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+              <script>
+                hbspt.forms.create({
+                portalId: "312283",
+                formId: "bf9e6a18-6459-4e2f-bc2a-bce5fe24fb98"
+              });
+              </script>
               <a class="btn btn-outline-secondary" data-toggle="modal" data-target="#news-modal">Submit</a>
             </div>
             <hr class="w-100 clearfix d-none d-sm-none d-md-none">
@@ -673,6 +680,7 @@
     </div>
   </div>
 </div>
+
 
     <script>
     $(document).ready(function(){
