@@ -19,7 +19,7 @@
          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive">
            <span class="navbar-toggler-icon small"></span>
          </button>
-         <a class="navbar-brand" href="#"><img src="imgs/beckLogo.png" class="beckLogo"></a>
+         <a class="navbar-brand" href="#"><img src="imgs/becklogo.png" class="beckLogo"></a>
          <div class="collapse navbar-collapse navbar-right" id="navbarResponsive">
             <ul class="navbar-nav">
               <li class="nav-item ">
@@ -368,10 +368,16 @@
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
               <h6 class="text-uppercase mb-4 font-weight-bold">Newsletter</h6>
               <p>Sign up for our newsletter today!</p>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@email.com">
-                </div>
-              <a class="btn btn-outline-secondary" data-toggle="modal" data-target="#news-modal">Submit</a>
+                <!--[if lte IE 8]>
+                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                  <![endif]-->
+                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                  <script>
+                    hbspt.forms.create({
+                    portalId: "312283",
+                    formId: "bf9e6a18-6459-4e2f-bc2a-bce5fe24fb98"
+                  });
+                  </script>
             </div>
             <hr class="w-100 clearfix d-none d-sm-none d-md-none">
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
