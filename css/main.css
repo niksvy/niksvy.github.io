@@ -9,6 +9,16 @@ margin:-71px 0 0; /* negative fixed header height */
   height: 45px;
 }
 
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+}
+
+.carouselBG {
+  background-color: #000;
+  opacity: .85;
+}
+
 .turnkeyBG {
   background-color: #fff;
   padding: 50px 0px 50px 0px;
@@ -63,6 +73,18 @@ a:active {
 
 .jumbotronCont {
   padding-top: 30px;
+}
+
+.sii-responsive {
+  width: 70%;
+}
+
+.phx-responsive {
+  width: 100%;
+}
+
+.cobalt-responsive {
+  width: 60%;
 }
 
 .img-responsive {
@@ -255,8 +277,15 @@ hr.style-six {
 }
 
 .folderSection {
+  padding-bottom: 300px;
+}
+
+@media ( max-width: 768px ) {
+  .folderSection {
   padding-bottom: 100px;
 }
+
+  }
 
 .folder {
   position: absolute;
@@ -304,6 +333,10 @@ hr.style-six {
 height: 600px;
 }
 
+.turnKeyPad {
+  padding-bottom: 40px;
+}
+
 .netCaption {
   height: 380px;
 }
@@ -313,7 +346,7 @@ height: 600px;
 }
 
 .headingSpacer {
-  padding: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 50px;
 }
 
 .rowSpacer {
@@ -336,7 +369,7 @@ height: 600px;
 }
 
 .rollformerParaPadding {
-  padding-top: 10px;
+  padding: 20px 0px 40px 0px;
 }
 
 #Home {
@@ -345,7 +378,7 @@ height: 600px;
 }
 
 #Rollforming {
-  padding: 50px 50px 50px 50px;
+  padding: 50px 50px 100px 50px;
   background-color: #ffffff;
 }
 
@@ -356,7 +389,7 @@ height: 600px;
 }
 
 #TurnKey {
-  padding: 125px 50px 125px 50px;
+  padding: 50px 50px 125px 50px;
   background-color: #fff;
   box-shadow: 4px 4px 20px #aaa;
 }
