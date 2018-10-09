@@ -451,6 +451,10 @@ height: 600px;
   box-shadow: 4px 4px 20px #aaa;
 }
 
+#carouselHeader {
+  box-shadow: 4px 4px 20px #aaa;
+}
+
 body {
     position: relative;
     overflow-x:hidden;
